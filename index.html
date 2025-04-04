@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <!-- <meta name="description" content="DESCRIPTION META TAG"> -->
+  <meta property="og:title" content="EnrichIndex: Using LLMs to Enrich Retrieval Indices Offline"/>
+  <!-- <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/> -->
+  <meta property="og:url" content="https://peterbaile.github.io/enrichindex/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/enrichment.png" />
+  <!-- <meta property="og:image:width" content="1200"/> -->
+  <!-- <meta property="og:image:height" content="630"/> -->
+
+
+  <meta name="twitter:title" content="EnrichIndex: Using LLMs to Enrich Retrieval Indices Offline">
+  <!-- <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/enrichment.png">
+  <!-- <meta name="twitter:card" content="summary_large_image"> -->
+  <!-- Keywords for your paper to be indexed by-->
+  <!-- <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>EnrichIndex: Using LLMs to Enrich Retrieval Indices Offline</title>
+  <link rel="icon" type="image/x-icon" href="static/images/enrichment.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">EnrichIndex: Using LLMs to Enrich Retrieval Indices Offline</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+                <span class="author-block">
+                  <a href="https://peterbaile.github.io/" target="_blank">Peter Baile Chen</a><sup>1</sup>,
+                </span>
+
+                <span class="author-block">
+                  <a href="https://tomerwolgithub.github.io/" target="_blank">Tomer Wolfson</a><sup>2</sup>,
+                </span>
+                
+                  <span class="author-block">
+                    <a href="https://people.csail.mit.edu/michjc/" target="_blank">Michael Cafarella</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.cis.upenn.edu/~danroth/" target="_blank">Dan Roth</a><sup>2</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>MIT, <sup>2</sup>University of Pennsylvania</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2406.11784" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/peterbaile/enrichindex" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-widescreen">
+    <!-- <div style="margin: 0 8rem;"> -->
+    <h2 class="subtitle" style="text-align: center;">
+      <b><i>EnrichIndex</i></b> leverages LLMs offline to enrich each object, creating multiple semantically-enhanced indices.
+      During online retrieval, it computes object relevance by calculating a weighted sum of similarities between the user query across all enriched indices: the original document or object, its summary, purpose and QA pairs.
+    </h2>
+      <div class="columns">
+        <div class="column" style="border-right: 2px dashed gray;">
+          <img src="./static/images/diagram_doc.png" />
+        </div>
+        <div class="column">
+          <img src="./static/images/diagram.png" />
+        </div>
+
+    
+  <!-- </div> -->
+</div>
+  <!-- </div> -->
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3">Summary</h2> -->
+        <div class="content has-text-justified">
+          <p><b>Is retrieval a solved problem?</b></p>
+          <ul>
+          <li>
+            Existing information retrieval systems excel in cases where the language of target documents closely matches that of the user query.
+          </li>
+          <li>
+            However, real-world retrieval systems are often required to <b>implicitly</b> reason whether a document is relevant. For example, when retrieving technical texts or tables, their relevance to the user query may be implied through a <b>particular jargon</b> or <b>structure</b>, rather than explicitly expressed in their content.
+          </li>
+          </ul>
+          
+          <p><b>What are existing solutions?</b></p>
+          <ul>
+            <li>Large language models (LLMs) hold great potential in identifying such implied relevance by leveraging their reasoning skills.</li>
+            <li>
+            Nevertheless, current LLM-augmented retrieval is hindered by <b>high latency</b> and <b>computation cost</b>, as the LLM typically computes the query-document relevance online, for every query <i>anew</i>.
+          </li>
+          </ul>
+          
+          
+          <p><b>What is our solution?</b></p>
+          <ul>
+            <li>To tackle this issue we introduce <b><i>EnrichIndex</i></b>, a retrieval approach which instead uses the LLM <b>offline</b> to build <i>semantically-enriched retrieval indices</i>, by performing a single pass over all documents in the retrieval corpus once during ingestion time.</li>
+            <li>The semantically-enriched indices can complement existing online retrieval approaches, boosting the performance of LLM re-rankers.</li>
+          </ul>
+
+          <p><b>How does <b><i>EnrichIndex</i></b> perform?</b></p>
+          <ul>
+           <li>
+            We evaluated EnrichIndex on five complex retrieval tasks, involving passages and tables, and found that it outperforms strong online LLM-based retrieval systems, with an average improvement of <b>11.7 points</b> in recall @ 10 and <b>10.6 points</b> in NDCG @ 10 compared to strong baselines.
+           </li>
+           <li>
+            In terms of online calls to the LLM, it processes <b>293.3 times fewer tokens</b> which greatly reduces the online latency and cost.
+           </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="container">
+  </div>
+</section> -->
+<!-- End image carousel -->
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{chen2024mdcr,
+  title={MDCR: A Dataset for Multi-Document Conditional Reasoning},
+  author={Chen, Peter Baile and Zhang, Yi and Liu, Chunwei and Gupta, Sejal and Kim, Yoon and Cafarella, Michael},
+  journal={arXiv preprint arXiv:2406.11784},
+  year={2024}
+}</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
